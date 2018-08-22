@@ -38,5 +38,5 @@ def get_proxy():
 
     return proxy
 
-proxy = get_proxy(proxy_list_url)
+proxy = get_proxy()
 print(proxy)
