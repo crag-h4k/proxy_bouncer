@@ -7,8 +7,8 @@ from datetime import datetime
 from requests import get
 from bs4 import BeautifulSoup
 
-def get_proxy(url):
-    html = get(proxy_list_url).text
+def get_proxy():
+    html = get('https://free-proxy-list.net/anonymous-proxy.html').text
     soup = BeautifulSoup(html, 'html.parser')
     proxy_arr = []
     ts = datetime.today().strftime('%d-%m-%Y')
@@ -32,13 +32,11 @@ def get_proxy(url):
 
     proxy_arr.pop(0)
     proxy = choice(proxy_arr)
-    proxy = {'IP_Address':proxy[0], 'Port':proxy[1], 'Code':proxy[2],
-              'Country':proxy[3], 'Anonymity':proxy[4], 'Google':proxy[5],
-              'Https':proxy[6], 'Last Checked':proxy[7]}
+    proxy = {'ip_addr':proxy[0], 'port':proxy[1], 'code':proxy[2],
+              'country':proxy[3], 'anon_level':proxy[4], 'google':proxy[5],
+              'https':proxy[6], 'last_checked':proxy[7]}
 
     return proxy
 
-proxy_list_url ='https://free-proxy-list.net/anonymous-proxy.html'
 proxy = get_proxy(proxy_list_url)
-#print(proxy['IP_Address']+':'+proxy['Port'],proxy['Country'])
 print(proxy)
