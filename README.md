@@ -6,7 +6,7 @@ To save a log of anonymous active proxies use the command
 
 `get_proxy(log=True)`
 
-Used as a function in another program, get_proxy() will return a random it will a proxy oject as shown in the example below:
+Used as a function in another program, ` get_proxy() ` will return a random it will a proxy oject as shown in the example below:
 
 `
     
