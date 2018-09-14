@@ -9,34 +9,34 @@ To save a log of anonymous active proxies use the command
 Used as a function in another program, get_proxy() will return a random it will a proxy oject as shown in the example below:
 
 `
-P = get_proxy()
+    P = get_proxy()
 
-print(P.ip_addr)        
+    print(P.ip_addr)        
 
-'103.18.133.34'
+    '103.18.133.34'
 
-print(P.port)
+    print(P.port)
 
-'21776'
+    '21776'
 
-print(P.code)
+    print(P.code)
 
-'ID'
+    'ID'
 
-print(P.country)
+    print(P.country)
 
-'Indonesia'
+    'Indonesia'
 
-print(P.anon_level)
+    print(P.anon_level)
 
-'elite proxy'
+    'elite proxy'
 
-print(P.google)
+    print(P.google)
 
-'no'
+    'no'
 
-print(P.https
+    print(P.https
 
-'no'
+    'no'
 `
 
