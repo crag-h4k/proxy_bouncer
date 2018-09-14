@@ -10,19 +10,33 @@ Used as a function in another program, get_proxy() will return a random it will 
 
 `
 P = get_proxy()
+
 print(P.ip_addr)        
-        '103.18.133.34'
+
+'103.18.133.34'
+
 print(P.port)
-        '21776'
+
+'21776'
+
 print(P.code)
-        'ID'
+
+'ID'
+
 print(P.country)
-        'Indonesia'
+
+'Indonesia'
+
 print(P.anon_level)
-        'elite proxy'
+
+'elite proxy'
+
 print(P.google)
-        'no'
+
+'no'
+
 print(P.https
-        'no'
+
+'no'
 `
 
