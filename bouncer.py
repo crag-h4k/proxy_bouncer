@@ -6,6 +6,7 @@ from datetime import datetime
 
 from requests import get
 from bs4 import BeautifulSoup
+
 class proxy:
     def __init__(self, ip_addr, port, code, country, anon_level, google, https, last_checked):
         self.ip_addr = ip_addr
@@ -46,6 +47,6 @@ def get_proxy(log=False):
     P = proxy(ip_addr = p[0], port = p[1], code = p[2], country = p[3],anon_level = p[4], google = p[5], https = p[6], last_checked = p[7])
 
     return P
-
-#proxy = get_proxy()
-#print(proxy)
+if __name__ == '__main__':
+    proxy = get_proxy()
+    print(proxy)
