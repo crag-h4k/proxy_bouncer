@@ -1,1 +1,6 @@
 proxies*
+proxy_bouncer.egg-info/*
+proxy_bouncer/__pycache__
+build/*
+dist/*
+*.pyc
