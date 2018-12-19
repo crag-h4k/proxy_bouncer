@@ -12,7 +12,7 @@ setuptools.setup(
     long_description = long_description,
     long_description_content_type = 'text/markdown',
     url = 'https://github.com/deadlift1226/',
-    install_requires = 'requests, bs4', #3rd party pip packages
+    install_requires = ['requests', 'bs4',], #3rd party pip packages
     packages = setuptools.find_packages(),
     classifiers = [
         'Programming Language :: Python :: 3',
