@@ -5,13 +5,13 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = 'proxy_bouncer',
-    version = '0.0.0',
+    version = '0.0.1',
     author = 'Dane Morgan',
     author_email = 'danemorgan91@gmail.com',
     description = 'scraps proxys from an online list then returns and logs a list of valid and anon proxies',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/deadlift1226/',
+    url = 'https://github.com/deadlift1226/proxy_bouncer',
     install_requires = ['requests', 'bs4',], #3rd party pip packages
     packages = setuptools.find_packages(),
     classifiers = [
