@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = 'proxy_bouncer',
-    version = '0.0.1',
+    version = '0.0.2',
     author = 'Dane Morgan',
     author_email = 'danemorgan91@gmail.com',
     description = 'scraps proxys from an online list then returns and logs a list of valid and anon proxies',
